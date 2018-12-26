@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray_assert">#505050</color>
+    <color name="ban_white">#55000000</color>
+    <color name="bg">#ffffff</color>
+    <color name="item_bg">#1e1e1e</color>
+    <color name="empty_bg">#1a1a1a</color>
+    <color name="bgitem1">#1a1a1a</color>
+    <color name="bgitem2">#1b1b1b</color>
+    <color name="bgitem3">#2e2e2e</color>
+    <color name="minetitle">#119ff1</color>
+    <color name="helpitem">#303030</color>
+
+    <color name="blue_selected">#119ff1</color>
+    <color name="gray_unselected">#999999</color>
+    <color name="up_tab_bg">#262626</color>
+    <color name="tab_bg">#151515</color>
+
+    <color name="tab_main_text_1">#aaa</color>
+    <color name="tab_main_text_2">#74b5f7</color>
+    <color name="mineline">#3b3b3b</color>
+    <color name="divider_line">#3b3b3b</color>
+    <color name="mineitem">#ceaa73</color>
+
+    <color name="bgbtn">#29b6f6</color>
+    <color name="hint">#5529b6f6</color>
+
+    <color name="gray">#88000000</color>
+    <color name="red">#e04917</color>
+    <color name="green">#069d35</color>
+
+    <color name="rg_selected">#e04917</color>
+    <color name="rg_unselected">#55e04917</color>
+
+    <color name="leave_item_bg">#11000000</color>
+</resources>

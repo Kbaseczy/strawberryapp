@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_three_class" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/a" />
+    <TextView android:gravity="center" android:id="@id/tv_three_class_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <TextView android:gravity="center" android:id="@id/tv_three_class" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="点击拓展" />
+</LinearLayout>

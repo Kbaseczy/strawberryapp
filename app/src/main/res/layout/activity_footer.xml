@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@mipmap/icon_line" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_home_but" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/home_but" android:background="@drawable/footer_home_but" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff555555" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/footer_home" />
+    </LinearLayout>
+    <TextView android:layout_weight="1.0" style="@style/style_width_and_height_wrap" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_class_but" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/class_but" android:background="@drawable/footer_class_but" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff555555" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/footer_class" />
+    </LinearLayout>
+    <TextView android:layout_weight="1.0" style="@style/style_width_and_height_wrap" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_leave_but" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/leave_but" android:background="@drawable/footer_leave_but" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff555555" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/footer_leave" />
+    </LinearLayout>
+    <TextView android:layout_weight="1.0" style="@style/style_width_and_height_wrap" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_user_but" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="30.0dip">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/user_but" android:background="@drawable/footer_user_but" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff555555" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/footer_user" />
+    </LinearLayout>
+</LinearLayout>

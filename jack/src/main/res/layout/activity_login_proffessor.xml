@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_width_and_height_match"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/style_width_match_height_wrap"
+        android:layout_weight="5.0" />
+
+    <LinearLayout
+        style="@style/style_width_match_height_wrap"
+        android:layout_weight="2.0"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username_pro"
+            style="@style/style_width_match_height_wrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@mipmap/login_eidt"
+            android:completionThreshold="1"
+            android:hint="@string/user_hint"
+            android:padding="5.0dip"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textColorHint="#ffcccccc"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@+id/password_pro"
+            style="@style/style_width_match_height_wrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@mipmap/login_eidt"
+            android:hint="@string/pass_hint"
+            android:inputType="textPassword"
+            android:padding="5.0dip"
+            android:paddingLeft="10.0dip"
+            android:textColor="#ff333333"
+            android:textColorHint="#ffcccccc"
+            android:textSize="15.0sp" />
+
+        <Button
+            android:id="@+id/login_but_professor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@mipmap/login_but"
+            android:text="@string/login_but"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+</LinearLayout>

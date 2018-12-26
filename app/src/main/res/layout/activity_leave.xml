@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/leave_header"
+        layout="@layout/activity_header"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+    <RelativeLayout
+        android:id="@id/rl_lunbo_progressbar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="10.0">
+
+        <ProgressBar
+            android:id="@id/pb_index"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/my_progressbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb_index"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dip"
+            android:text="正在加载...."
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/ll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="10.0"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip">
+
+            <com.cai.strawberryapp.View.RefreshListView
+                android:id="@id/leavelistview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@id/iv_new_que"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="20.0dip"
+                android:background="@mipmap/release_xhd1" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@id/leave_footer"
+        layout="@layout/activity_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+</LinearLayout>

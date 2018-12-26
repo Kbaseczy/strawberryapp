@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">樱桃课堂</string>
+    <string name="input">问题录入</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="user_hint">请输入用户名</string>
+    <string name="pass_hint">请输入密码</string>
+    <string name="rem_pass">记住密码</string>
+    <string name="notknow_pass">忘记密码?</string>
+    <string name="login_but">登录</string>
+    <string name="register"><u>还没有帐号？快速注册</u></string>
+    <string name="title_activity_common_class">CommonClass</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="forget_hint_1">帐号：</string>
+    <string name="forget_hint_2">为保护您的帐号安全，请输入完整的注册时手机号：</string>
+    <string name="forget_hint_3">请输入新密码：</string>
+    <string name="forget_hint_4">再次输入新密码：</string>
+    <string name="forget_hint_5">提交</string>
+    <string name="re_user_hint">请输入用户名</string>
+    <string name="re_pass_hint">请输入6位以上密码</string>
+    <string name="re_okpass_hint">确认密码</string>
+    <string name="re_phone_hint">请输入手机号码</string>
+    <string name="re_verify_hint">请输入验证码</string>
+    <string name="re_getverify_hint">获取验证码</string>
+    <string name="register_but">注册</string>
+    <string name="title_activity_header">HeaderActivity</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_video_list">VideoListActivity</string>
+    <string name="title_activity_leave">LeaveActivity</string>
+    <string name="title_activity_video_play">VideoPlayActivity</string>
+    <string name="title_activity_video_class">VideoClassActivity</string>
+    <string name="title_activity_new_show">NewShowActivity</string>
+    <string name="title_activity_leave_detail">LeaveDetailActivity</string>
+    <string name="title_activity_all_scream_show">AllScreamShowActivity</string>
+
+    <string name="footer_home">主页</string>
+    <string name="footer_class">课堂</string>
+    <string name="footer_leave">咨询</string>
+    <string name="footer_user">我</string>
+
+    <string name="leave_submit_progress">正在发表请稍候...</string>
+    <string name="leave_new_que_title">请输入问题标题</string>
+    <string name="leave_new_que_content">请输入问题内容</string>
+    <string name="input_audio">请语音输入内容...</string>
+    <string name="input_audio_button">点击输入语音</string>
+    <string name="title_activity_leave_sec_reply">LeaveSecReplyActivity</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="user_update_password">修改密码</string>
+    <string name="user_update_password_arrow">></string>
+    <string name="user_user_que">我的提问</string>
+    <string name="user_question">知识问答</string>
+    <string name="user_about">关于我们</string>
+    <string name="title_activity_update_pass">UpdatePassActivity</string>
+    <string name="user_hint_phone">请输入手机号码</string>
+    <string name="user_update_newpass">请输入新密码</string>
+    <string name="user_update_oknewpass">再次输入新密码</string>
+    <string name="user_update_submit"> 确认修改</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_new_que">NewQueActivity</string>
+    <string name="title_activity_forget_pass">ForgetPassActivity</string>
+    <string name="title_activity_test1">Test1Activity</string>
+    <string name="a">A:</string>
+    <string name="add">添加</string>
+    <string name="anwser">答案:</string>
+    <string name="b">B:</string>
+    <string name="content">题目内容</string>
+    <string name="clear">清空</string>
+    <string name="redlight">红灯</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

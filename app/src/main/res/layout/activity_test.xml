@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/header" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/activity_header" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0">
+            <com.cai.strawberryapp.View.RefreshListView android:id="@id/lv_ans_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/leave_footer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/but_add_pic" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="照片" android:layout_weight="1.0" />
+            <EditText android:id="@id/send_edt" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0" />
+            <Button android:id="@id/but_submit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="发送" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rl_add_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip">
+            <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_add_pic" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

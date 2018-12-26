@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title" />
+
+    <TextView
+        android:id="@+id/tv_update_username"
+        android:layout_width="300.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70.0dip"
+        android:background="@mipmap/user_xhd"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffffff"
+        android:textSize="20.0sp" />
+
+    <EditText
+        android:id="@+id/et_update_newpass"
+        android:layout_width="300.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:background="@mipmap/con_password_xhd"
+        android:hint="@string/user_update_newpass"
+        android:inputType="textPassword"
+        android:padding="5.0dip"
+        android:textColor="#ff333333"
+        android:textColorHint="#ffcccccc"
+        android:textSize="15.0sp" />
+
+
+    <EditText
+        android:id="@+id/et_update_oknewpass"
+        android:layout_width="300.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:background="@mipmap/con_password_xhd"
+        android:hint="@string/user_update_oknewpass"
+        android:inputType="textPassword"
+        android:padding="5.0dip"
+        android:textColor="#ff333333"
+        android:textColorHint="#ffcccccc"
+        android:textSize="15.0sp" />
+
+
+    <Button
+        android:id="@+id/but_update_submit"
+        android:layout_width="300.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50.0dip"
+        android:background="@mipmap/confirm_xhd"
+        android:text="@string/user_update_submit"
+        android:textColor="#ffffffff"
+        android:textSize="22.0sp" />
+
+</LinearLayout>

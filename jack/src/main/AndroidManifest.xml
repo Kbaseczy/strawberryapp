@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jack.strawberry">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".StrawberryApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ForgetPassActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity
+            android:name=".activity.IndexActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.UpdatePassActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.QuestionActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.LoginProffessorActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.InputActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.QuestionListActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.ShopActivity" />
+        <activity android:name=".activity.TabActivity">
+            <!--<intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

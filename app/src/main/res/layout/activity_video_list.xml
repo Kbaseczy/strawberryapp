@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/activity_header" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0">
+        <RelativeLayout android:id="@id/rl_video_list_progressbar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/pb_index" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/my_progressbar" android:layout_centerInParent="true" />
+            <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="正在加载...." android:layout_below="@id/pb_index" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.cai.strawberryapp.View.RefreshListView android:id="@id/videolistview" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/activity_footer" />
+</LinearLayout>

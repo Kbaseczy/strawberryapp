@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ffaaaaaa" android:id="@id/tv_ans_detail_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffaaaaaa" android:id="@id/tv_ans_detail_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff444444" android:id="@id/tv_ans_detail_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_ans_detail_audio" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip">
+        <Button android:id="@id/but_ans_detail_audio" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:id="@id/tv_ans_detail_audio_time" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_ans_detail_image1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="30.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/iv_ans_detail_image2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="30.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/iv_ans_detail_image3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="30.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/iv_ans_detail_image4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="30.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+</LinearLayout>

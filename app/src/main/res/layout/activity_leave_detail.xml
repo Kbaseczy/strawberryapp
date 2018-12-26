@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@id/header"
+            layout="@layout/activity_header"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <RelativeLayout
+            android:id="@id/rl_lunbo_progressbar"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="10.0">
+
+            <ProgressBar
+                android:id="@id/pb_index"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/my_progressbar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pb_index"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10.0dip"
+                android:text="正在加载...."
+                android:textSize="17.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/ll_container"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="10.0"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.cai.strawberryapp.View.RefreshListView
+                android:id="@id/lv_ans_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00ffffff"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/leave_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/but_add_pic"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@mipmap/photo_xhd"
+                android:text="图片"
+                android:textColor="#ffffffff"
+                android:textSize="17.0sp" />
+
+            <Button
+                android:id="@id/bt_frist_reply_add_audio"
+                android:layout_width="22.5dip"
+                android:layout_height="22.5dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:background="@mipmap/addaudio"
+                android:text="添加"
+                android:textColor="#00000000" />
+
+            <Button
+                android:id="@id/bt_frist_reply_new_audio"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="5.0"
+                android:background="@mipmap/audio_fasong_bg"
+                android:text="@string/input_audio_button"
+                android:textColor="#ffeeeeee"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@id/send_edt"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="5.0"
+                android:background="@mipmap/password_xhd"
+                android:focusable="false"
+                android:hint="我要回复..."
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:singleLine="true"
+                android:textColorHint="#ffaaaaaa" />
+
+            <Button
+                android:id="@id/but_submit"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@mipmap/photo_xhd"
+                android:text="发送"
+                android:textColor="#ffffffff"
+                android:textSize="17.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_add_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:visibility="gone">
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@id/ll_add_pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="5.0">
+
+        <Button
+            android:id="@+id/but_about_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginTop="30.0dip"
+            android:background="@mipmap/register_fanhui" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_weight="5.0">
+
+        <TextView
+            android:id="@+id/tv_about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="关于我们"
+            android:textColor="#ff333333"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/tv_about_function"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_about_version"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="40.0dip"
+            android:text="声明："
+            android:textColor="#ffc8c8c8"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:layout_width="325.0dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_about_function"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dip"
+            android:text="本软件由北京粮经作物创新团队与北京农学院计算机与信息工程学院联合开发，我们将会妥善保护用户个人信息，最终解释权归北京农学院所有"
+            android:textColor="#ffc8c8c8" />
+
+        <TextView
+            android:id="@+id/copy_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50.0dip"
+            android:text="Copyright @ BUA.All Rights Reserved."
+            android:textColor="#ffc8c8c8" />
+
+        <TextView
+            android:id="@+id/copy_chinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/copy_english"
+            android:layout_centerHorizontal="true"
+            android:text="北京农学院  版权所有"
+            android:textColor="#ffc8c8c8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/copy_chinese"
+            android:layout_centerHorizontal="true"
+            android:text="北京市粮经作物产业创新团队支持"
+            android:textColor="#ffc8c8c8" />
+    </RelativeLayout>
+</LinearLayout>

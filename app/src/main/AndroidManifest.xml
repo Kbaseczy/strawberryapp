@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cai.strawberryapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.HeaderActivity"
+            android:label="@string/title_activity_header"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.IndexActivity"
+            android:label="@string/title_activity_index"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TestActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UpdatePassActivity"
+            android:label="@string/title_activity_update_pass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.VideoListActivity"
+            android:label="@string/title_activity_video_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LeaveActivity"
+            android:label="@string/title_activity_leave"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.VideoPlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_video_play"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activity.AllScreamShowActivity"
+            android:label="@string/title_activity_all_scream_show"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.VideoClassActivity"
+            android:label="@string/title_activity_video_class"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.NewShowActivity"
+            android:label="@string/title_activity_new_show"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LeaveDetailActivity"
+            android:label="@string/title_activity_leave_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LeaveSecReplyActivity"
+            android:label="@string/title_activity_leave_sec_reply"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.UserActivity"
+            android:label="@string/title_activity_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.NewQueActivity"
+            android:label="@string/title_activity_new_que"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ForgetPassActivity"
+            android:label="@string/title_activity_forget_pass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Test1Activity"
+            android:label="@string/title_activity_test1"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:layout_gravity="center_vertical" android:id="@id/tv_que_detail_user" android:background="@drawable/bottom_border_write" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="25.0sp" android:id="@id/tv_que_detail_title" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffaaaaaa" android:id="@id/tv_que_detail_content" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_que_detail_audio" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <Button android:id="@id/but_que_detail_audio" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:id="@id/tv_que_detail_audio_time" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:id="@id/iv_que_detail_image1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="30.0dip" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/iv_que_detail_image2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="30.0dip" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/iv_que_detail_image3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="30.0dip" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/iv_que_detail_image4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="30.0dip" android:adjustViewBounds="true" />
+    <RelativeLayout android:background="@drawable/bottom_border_gray" android:paddingLeft="30.0dip" android:paddingTop="3.0dip" android:paddingRight="30.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="#ffaaaaaa" android:id="@id/louzhu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="楼主" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffaaaaaa" android:id="@id/tv_que_detail_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/louzhu" />
+    </RelativeLayout>
+</LinearLayout>
