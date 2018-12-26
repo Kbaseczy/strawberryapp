@@ -8,6 +8,7 @@ import static android.content.Context.MODE_PRIVATE;
 public class PreferenceUtils {
 
     private static final String PREF_DEFAULT_FILE = "STRAWBERRY";
+    public static final String SCORE_SHOP = "score_shop";
 
     public static void persistString(Context context, String key, String value) {
         persistString(context, PREF_DEFAULT_FILE, key, value);

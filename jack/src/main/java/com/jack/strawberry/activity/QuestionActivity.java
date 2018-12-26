@@ -38,7 +38,6 @@ public class QuestionActivity extends Activity {
     }
 
     private void submit() {
-
         RadioGroup one = findViewById(R.id.rg_one);
         int oneID = one.getCheckedRadioButtonId();
         if (oneID == 4) {
