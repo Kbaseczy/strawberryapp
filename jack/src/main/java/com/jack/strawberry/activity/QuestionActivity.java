@@ -37,6 +37,11 @@ public class QuestionActivity extends Activity {
         findViewById(R.id.but_question_submit).setOnClickListener(view -> submit());
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
     private void submit() {
         RadioGroup one = findViewById(R.id.rg_one);
         int oneID = one.getCheckedRadioButtonId();

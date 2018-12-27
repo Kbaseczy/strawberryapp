@@ -19,6 +19,7 @@ import com.jack.strawberry.activity.InputActivity;
 import com.jack.strawberry.activity.LoginActivity;
 import com.jack.strawberry.activity.QuestionActivity;
 import com.jack.strawberry.activity.ShopActivity;
+import com.jack.strawberry.activity.StoreActivity;
 import com.jack.strawberry.activity.UpdatePassActivity;
 import com.jack.strawberry.utils.PreferenceUtils;
 
@@ -100,5 +101,6 @@ public class MineFragment extends Fragment {
         );
 
         view.findViewById(R.id.rl_shop).setOnClickListener(v -> startActivity(new Intent(getActivity(), ShopActivity.class)));
+        view.findViewById(R.id.rl_store).setOnClickListener(v -> startActivity(new Intent(getActivity(), StoreActivity.class)));
     }
 }

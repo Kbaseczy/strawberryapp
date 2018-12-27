@@ -14,9 +14,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jack.strawberry.R;
+import com.jack.strawberry.StrawberryApplication;
 import com.jack.strawberry.activity.LoginActivity;
 import com.jack.strawberry.activity.QuestionActivity;
+import com.jack.strawberry.activity.StoreActivity;
+import com.jack.strawberry.greendao.StoreVODao;
 import com.jack.strawberry.utils.PreferenceUtils;
+import com.jack.strawberry.vo.StoreVO;
 
 import java.util.List;
 import java.util.Map;
@@ -26,7 +30,7 @@ public class RecyclerAdapterShop extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private List<Map<String, String>> list;
     private Context mContext;
-
+    StoreActivity activity = new StoreActivity();
     public RecyclerAdapterShop(Context context) {
         this.mContext = context;
     }
@@ -55,6 +59,8 @@ public class RecyclerAdapterShop extends RecyclerView.Adapter<RecyclerView.ViewH
                         int score_have = PreferenceUtils.getInt(mContext, LoginActivity.SCORE);
                         int score_minus = Integer.parseInt(Objects.requireNonNull(map.get("score")));
                         if (score_have >= score_minus) {
+                            StoreVODao storeVODao = StrawberryApplication.getDaoSession().getStoreVODao();
+                            storeVODao.insertOrReplace(new StoreVO(null,Integer.parseInt(Objects.requireNonNull(map.get("score"))),map.get("name")));
                             PreferenceUtils.persistInt(mContext, LoginActivity.SCORE, score_have - score_minus);
                             Toast.makeText(mContext, "恭喜您~兑换成功", Toast.LENGTH_SHORT).show();
                         } else {

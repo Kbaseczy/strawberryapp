@@ -151,6 +151,32 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
         </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_store"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@mipmap/mod_password_line_xhd">
+
+            <ImageView
+                android:id="@+id/iv_store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:background="@mipmap/us_icon_xhd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@id/iv_store"
+                android:text="小仓库"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="50.0dip"

@@ -62,9 +62,15 @@ public class TabActivity extends FragmentActivity {
             tabLayout.addTab(tabLayout.newTab().setText(aTitle));
         }
 
-        String homeJson = Utils.getStrFromAssets(this, "leave");//todo 这里改变数据源  1,2，,3，,4，
+        String homeJson = Utils.getStrFromAssets(this, "leave");
+        String jibingJson = Utils.getStrFromAssets(this, "jibing");
+        String peiyuJson = Utils.getStrFromAssets(this, "peiyu");
+        String yizhiJson = Utils.getStrFromAssets(this, "yizhi");
         Gson gson = new Gson();
-        List<ProfessorAnwser.LeaveBean> list = gson.fromJson(homeJson, ProfessorAnwser.class).getLeave(); //todo 这里转换数据源 1,2,3,4
+        List<ProfessorAnwser.LeaveBean> list = gson.fromJson(homeJson, ProfessorAnwser.class).getLeave();
+        List<ProfessorAnwser.LeaveBean> list1 = gson.fromJson(jibingJson, ProfessorAnwser.class).getLeave();
+        List<ProfessorAnwser.LeaveBean> list2 = gson.fromJson(peiyuJson, ProfessorAnwser.class).getLeave();
+        List<ProfessorAnwser.LeaveBean> list3 = gson.fromJson(yizhiJson, ProfessorAnwser.class).getLeave();
 
         Log.v("长度", list.size() + "<----长度");
         List<ProfessorFragment> fragments = new ArrayList<>();
@@ -73,9 +79,9 @@ public class TabActivity extends FragmentActivity {
         ProfessorFragment fragment3 = new ProfessorFragment();
         ProfessorFragment fragment4 = new ProfessorFragment();
         fragment1.setList(list);
-        fragment2.setList(list);
-        fragment3.setList(list);
-        fragment4.setList(list);
+        fragment2.setList(list1);
+        fragment3.setList(list2);
+        fragment4.setList(list3);
         fragments.add(fragment1);
         fragments.add(fragment2);
         fragments.add(fragment3);
